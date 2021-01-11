@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivco Shop: Catálogo</title>
+  <link rel="stylesheet" href="../css/estilo-catalogo.css">
+  <link rel="stylesheet" href="../css/lightbox.css">
+  <link rel="shortcut icon" href="../img/vector-icono-logotipo-mascota-robot-azul_8169-214.jpg" type="image/x-icon">
+</head>
+<body id="body">
+  <div id="contenedor">
+    <div class="subcontenedor" id="header">
+      <div class="logo"><a href="../index.html"><img src="../img/logo-removebg-preview.png" height="100"></a></div>
+      <div class="for-header">
+        <form action="./pag/Catálogo.html" method="POST">
+          <fieldset id="idBuscador">
+            <div class="search">
+            <input type="search" name="busqueda" placeholder="Buscar productos...">
+            </div>
+            <div class="submit">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="icons">
+        <div class="sociales">
+          <p class="redSocial">REDES SOCIALES</p>
+          <a title="facebook" href="#"><img src="../img/facebook.svg" width="8%" class="face" alt="facebook"/></a>
+          <a title="instagram" href="#"><img src="../img/instagram.svg" width="8%" class="instagram" alt="instagram"/></a>
+          <a title="twiter" href="#"><img src="../img/twitter.svg" width="8%" class="twitter" alt="twiter"/></a>
+          <a title="carrito de compra" href="#"><img src="../img/carritoCompra.svg" width="8%" class="carritoCompra" alt="carrito de compra"/></a>
+        </div>
+        <div class="infoVenta">
+          <p class="correo">CONTÁCTENOS</p>
+          <p><img src="../img/correo.svg" alt="informes" width="8%" class="email"> informes@onlineshopivco</p>
+        </div>
+      </div>
+    </div>
+    <div class="icono" id="open">
+      <span>&#9776;</span>
+    </div>
+    <center>
+    <nav id="nav" class="nav">
+      <ul class="men">
+        <li><a href="Catálogo.html" target="_top"><img src="../img/el-catalogo.svg"alt="" class="ico-menu"><br> CATÁLOGO</a>
+          <ul class="submen">
+            <li><a href="Smartphone.html" target="_parent">SMARTPHONE</a></li>
+            <li><a href="laptops.html" target="_parent">LAPTOPS</a></li>
+            <li><a href="computadoras.html" target="_parent">COMPUTADORAS</a></li>
+            <li><a href="impresoras.html" target="_parent">IMPRESORAS</a></li>
+            <li><a href="accesorios.html" target="_parent">ACCESSORIOS</a></li>
+            <li><a href="software&antivirus.html" target="_parent">SOFTWARE & ANTIVIRUS</a></li>
+          </ul>
+        </li>
+        <li><a href="Servicios.html"><img src="../img/el-servicio.svg"alt="" class="ico-menu"><br> SERVICIOS</a></li>
+        <li><a href="FormasPago.html"><img src="../img/metodo-pago.svg"alt="" class="ico-menu"><br> FORMAS DE PAGO</a></li>
+        <li><a href="LaEmpresa.html"><img src="../img/la-empresa.svg"alt="" class="ico-menu"><br>LA EMPRESA</a></li>
+        <li><a href="Contactenos.html"><img src="../img/email2.svg"alt="" class="ico-menu"><br>CONTÁCTENOS</a></li>
+        <li><a title="Iniciar sesión o cambia tema"><img src="../img/usuario.svg"alt="" class="ico-menu"><br> TU CUENTA</a>
+        <ul class="submen">
+        <li><a href="Login.html">INICIA SESIÓN</a></li>
+        <li><a id="darkMode">MODO OSCURO <i class="fas fa-moon fa-2x"></i></a></li>
+      </ul>
+    </nav>
+    </center>
+    <header>
+      <img src="../img/banner_01.jpg" id="idIMG">
+      <div class="botones">
+        <img src="../img/play.png" alt="" id="play">
+        <img src="../img/stop.png" alt="" id="stop">
+      </div>
+    </header>
+    <br><br>
+    <div class="popup" id="idPopup">
+      <div id="cerrar"> <a href="javascript:cerrar()"><img src="../img/cerrarBtn.svg" width="40" alt=""></a></div>
+      <form class="form-popup">
+        <p class="titulo-popup">INGRESAR DATOS</p>
+        
+        <div class="dato-popup">
+        <span>Nombre</span>
+        </div>
+        <div class="caja-popup">
+        <input type="text" placeholder="nombre" name="nombre" id="idNombre" required>
+        </div>
+
+        <div class="dato-popup">
+        <span>Apellido</span>  
+        </div>
+        <div class="caja-popup">
+        <input type="text" placeholder="apellido" name="apellido" id="idApellido" required>
+        </div>
+
+        <div class="dato-popup">
+        <span>Dirección</span> 
+        </div>
+        <div class="caja-popup">
+        <input type="text" placeholder="direccion" name="direccion" id="idDireccion" required>
+        </div>
+
+        <div class="dato-popup">
+        <span>Teléfono</span>
+        </div>
+        <div class="caja-popup">
+        <input type="text" placeholder="999-999-99" name="fono" id="idTelefono" required>
+        </div>
+
+        <input type="submit" name="submit" id="idConfirmar" value="CONFIRMAR">
+      
+      </form>
+
+    </div>
+
+    <!--<a href="javascript:abrir()">ABRIR VENTAN</a>-->
+   
+    <div class="formulario">
+    <form action="Catálogo.html">
+      <select onchange="window.location=this.options[this.selectedIndex].value" id="idBuscador">
+        <option selected value="catálogo.html">Todos</option>
+        <option value="accesorios.html">Accesorios</option>
+        <option value="impresoras.html">Impresoras</option>
+        <option value="laptops.html">Laptops</option>
+        <option value="Smartphone.html">Smartphone</option>
+        <option value="software&antivirus.html">Software&antivirus</option>
+      </select>
+    </form>
+    </div>
+    <main>
+      <section>
+        <figure>
+          <a href="../img/producto1.jpg" data-lightbox="grupo">
+          <img src="../img/producto1.jpg" class="imgPro"></a>
+          <figcaption class="letra">CABEZAL HP (72) C9384A MATE.BL&YELL</figcaption>
+          <figcaption class="letra">T610</figcaption>
+          <figcaption id="figcaptionvalor"> S/289.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto2.jpg" data-lightbox="grupo">
+          <img src="../img/producto2.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">MOUSE GAMER HALION HA-M923 USB /</figcaption>
+          <figcaption class="letra">NEGRO</figcaption>
+          <figcaption id="figcaptionvalor">S/55.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto3.jpg" data-lightbox="grupo">
+          <img src="../img/producto3.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">TECLADO MÉCANICO GAMING HP GK100</figcaption>
+          <figcaption class="letra">SILVER</figcaption>
+          <figcaption id="figcaptionvalor">S/219.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto4.jpg" data-lightbox="grupo">
+          <img src="../img/producto4.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">DISCO EXTERNO CANVIO BASIC. 3TB</figcaption>
+          <figcaption class="letra">TOSHIBA USB 3.0</figcaption>
+          <figcaption id="figcaptionvalor">S/410.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto5.jpg" data-lightbox="grupo">
+          <img src="../img/producto5.jpg" class="imgPro"></a>
+          <figcaption class="letra">PC GAMER G2- INTEL CORE I5, 16GB</figcaption>
+          <figcaption class="letra">GTX1050 4GB, 1TB + SSD 256GB NVME</figcaption>
+          <figcaption id="figcaptionvalor">S/3649.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto6.jpg" data-lightbox="grupo">
+          <img src="../img/producto6.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">PC GAMER G1- INTEL CORE I5, 8GB</figcaption>
+          <figcaption class="letra">GTX1050 4GB, 1TB LED IPS 24</figcaption>
+          <figcaption id="figcaptionvalor">S/3269.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto7.jpg" data-lightbox="grupo">
+          <img src="../img/producto7.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">COMPUTADORA TODO EN UNO HP22</figcaption>
+          <figcaption class="letra">C003LA AMD A9, 4GB, 1TB 21.5</figcaption>
+          <figcaption id="figcaptionvalor">S/1949.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto8.jpg" data-lightbox="grupo">
+          <img src="../img/producto8.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">PC GAMER G7- INTEL CORE I7, 16GB</figcaption>
+          <figcaption class="letra">GTX1050 4GB, 1TB + SSD 256GB NVME</figcaption>
+          <figcaption id="figcaptionvalor">S/5090.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto9.jpg" data-lightbox="grupo">
+          <img src="../img/producto9.jpg" class="imgPro"></a>
+          <figcaption class="letra">IMPRESORA MULTIFUCIONAL HP SMART</figcaption>
+          <figcaption class="letra">TANK 500 TANQUE CONTINUO</figcaption>
+          <figcaption id="figcaptionvalor">S/749.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto10.jpg" data-lightbox="grupo">
+          <img src="../img/producto10.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">IMPRESORA MULTIF ECOTANK EPSON</figcaption>
+          <figcaption class="letra">L3160</figcaption>
+          <figcaption id="figcaptionvalor">S/899.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto11.jpg" data-lightbox="grupo">
+          <img src="../img/producto11.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">IMPRESORA EPSON Ecotank L3150</figcaption>
+          <figcaption class="letra">MULTFUNCIONAL WIFI</figcaption>
+          <figcaption id="figcaptionvalor">S/799.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto12.jpg" data-lightbox="grupo">
+          <img src="../img/producto12.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">MULTIFUNCIONAL DE TINTA CONTINUA</figcaption>
+          <figcaption class="letra">CANON PIXMA G3100</figcaption>
+          <figcaption id="figcaptionvalor"> S/685.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto13.jpg" data-lightbox="grupo">
+          <img src="../img/producto13.jpg" class="imgPro"></a>
+          <figcaption class="letra">HP ELITEBOOK 840 G6, CORE I5-</figcaption>
+          <figcaption class="letra">8265U,WIN10 PRO, 8 GB, SSD 512GB, 14</figcaption>
+          <figcaption id="figcaptionvalor">S/5149.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto14.jpg" data-lightbox="grupo">
+          <img src="../img/producto14.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">LENOVO 15IKB I5,8GB,1TB</figcaption>
+          <figcaption class="letra">250GB SSD, 2GB VIDEO AMD</figcaption>
+          <figcaption id="figcaptionvalor">S/2899.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto15.jpg" data-lightbox="grupo">
+          <img src="../img/producto15.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">ASUS ZENBOOK 14 UX434,CORE</figcaption>
+          <figcaption class="letra">i7 512GB 16GB,NVIDIA GeForce</figcaption>
+          <figcaption id="figcaptionvalor">S/6599.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto16.jpg" data-lightbox="grupo">
+          <img src="../img/producto16.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">LAPTOP ASUS SLIM S532F I7-8565U 15.6</figcaption>
+          <figcaption class="letra">8GB, 2TB , 15.6 HD</figcaption>
+          <figcaption id="figcaptionvalor"> S/4499.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto17.jpg" data-lightbox="grupo">
+          <img src="../img/producto17.jpg" class="imgPro"></a>
+          <figcaption class="letra">IPHONE XS, 5.8" 2436x1125, iOS 12, LTE,</figcaption>
+          <figcaption class="letra">DUAL SIM, WIFI, BLUETOOTH, FREE, 3</figcaption>
+          <figcaption id="figcaptionvalor">S/4749.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto18.jpg" data-lightbox="grupo">
+          <img src="../img/producto18.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">IPHONE XR, 6.1" 1792x828, iOS 12, LTE,</figcaption>
+          <figcaption class="letra">DUAL SIM, WIFI, BLUETOOTH, FREE, 5,</figcaption>
+          <figcaption id="figcaptionvalor">S/3649.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto19.jpg" data-lightbox="grupo">
+          <img src="../img/producto19.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">IPHONE 7, 4.7" 750x1334, iOS 10, LTE,</figcaption>
+          <figcaption class="letra">NANO SIM, BLUETOOTH, 3 COLORES</figcaption>
+          <figcaption id="figcaptionvalor">S/1649.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto20.jpg" data-lightbox="grupo">
+          <img src="../img/producto20.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">IPHONE 6s, 4.7" 750x1334, iOS 9, LTE,</figcaption>
+          <figcaption class="letra">NANO SIM, WIFI, BLUETOOTH, FREEE</figcaption>
+          <figcaption id="figcaptionvalor"> S/1249.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto21.jpg" data-lightbox="grupo">
+          <img src="../img/producto21.jpg" class="imgPro"></a>
+          <figcaption class="letra">MCAFEE INTERNET SECURITY</figcaption>
+          <figcaption class="letra">2014 3PCs ANUAL</figcaption>
+          <figcaption id="figcaptionvalor">S/155.76</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto22.jpg" data-lightbox="grupo">
+          <img src="../img/producto22.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">MICROSOFT WINDOWS SERVER</figcaption>
+          <figcaption class="letra">2016 1 LICENCIA</figcaption>
+          <figcaption id="figcaptionvalor">S/531.00</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto23.jpg" data-lightbox="grupo">
+          <img src="../img/producto23.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">ESET HOME OFFICE SECURITY</figcaption>
+          <figcaption class="letra">PACK 5PCS</figcaption>
+          <figcaption id="figcaptionvalor">S/513.30</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="../img/producto24.jpg" data-lightbox="grupo">
+          <img src="../img/producto24.jpg" alt="" class="imgPro"></a>
+          <figcaption class="letra">MICROSOFT OFFICE 365</figcaption>
+          <figcaption class="letra">EMPRESA PREMIUM 1PC</figcaption>
+          <figcaption id="figcaptionvalor">S/509.76</figcaption>
+          <figcaption>
+            <form action="">
+              <input type="button" value="LO QUIERO!!" class="boton">
+            </form>    
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer id="pieFooter">
+      <div class="footer1">
+        <h1>ONLINESHOPIVCO.COM.PE</h1>
+        <h2>Tienda Online:</h2>
+        <h3>ATENCIÓN 24 HORAS ONLINE .:</h3><br><br>
+        <p><img src="../img/facebook.svg" width="15%" alt="">Siguenos</p>
+        <br>
+        <p><img src="../img/whatsapp.svg" width="15%" alt=""><a href="https://api.whatsapp.com/send?phone=01953659803" target="_blank">953 659 803</a></p>
+      </div>
+      <div class="footer2">
+        <h2>Contenido:</h2>
+        <ul>
+          <li><a href="../index.html">Portada</a></li>
+          <li><a href="Servicios.html">Servicios</a></li>
+          <li><a href="FormasPago.html">Formas de Pago</a></li>
+          <li><a href="LaEmpresa.html">La Empresa</a></li>
+          <li><a href="Noticias.html">Noticias</a></li>
+          <li><a href="Contactenos.html">Contáctenos</a></li>
+          <li><a href="Login.html">Ingresar / Registrarse</a></li>
+          <li><a href="mapaSitio.html">Mapa de Sitio</a></li>
+        </ul>
+        <br><br><br>
+        <div class="copy">
+        <span>Copyrigh2020t@ivco</span>
+        </div>
+      </div>
+      <div class="footer3">
+        <h2>Teléfono:</h2>
+        <h3>953659803</h3><br>
+        <h2>Correo electrónico:</h2>
+        <h3>ventas@onlineshopivco</h3>
+        <h3>soporte@onlineshopivco</h3>
+        <center>
+          <a title="Libro de Reclamaciones" href="libroReclamaciones.html"><img src="../img/libroReclamaciones.png" alt="Libro de Reclamaciones" /></a>
+        </center>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/catalogo.js"></script>
+<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+<script src="../js/menuResponsive.js"></script>
+
+</html>

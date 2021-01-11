@@ -1,0 +1,7 @@
+/*$(document).ready(function(){
+    $("img.pieFooter").click(function() {
+       url = $(this).attr("href");
+       window.open('https://www.facebook.com/', '_blank');
+       return false;
+    });
+ });*/
